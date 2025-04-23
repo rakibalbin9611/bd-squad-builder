@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/vxhVYcrx/sakib.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Left-Arm Orthodox",
+    "biddingPrice": 1500
+  },
+  {
+    "playerId": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/4Rt0RKBM/tamim.jpg",
+    "role": "Batsman",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 1200
+  },
+  {
+    "playerId": 3,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/HDmX3q3d/taskin.jpg",
+    "role": "Bowler",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "Right-Arm Fast",
+    "biddingPrice": 1100
+  },
+  {
+    "playerId": 4,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/W4wpyRJv/litton.jpg",
+    "role": "Wicket-Keeper",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "N/A",
+    "biddingPrice": 1000
+  },
+  {
+    "playerId": 5,
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/q3NqTpYZ/miraz.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 1300
+  },
+  {
+    "playerId": 6,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/99qH4YwW/muztafiz.jpg",
+    "role": "Bowler",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Left-Arm Fast",
+    "biddingPrice": 1400
+  },
+  {
+    "playerId": 7,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/Nddwj5Jh/Mushfiqur-Rahim.jpg",
+    "role": "Wicket-Keeper",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "N/A",
+    "biddingPrice": 1250
+  },
+  {
+    "playerId": 8,
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/6zzRdQz/Mahmudullah.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 1100
+  },
+  {
+    "playerId": 9,
+    "name": "Najmul Hossain Shanto",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/Kp74rVRb/Najmul-Hossain-Shanto.jpg",
+    "role": "Batsman",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 950
+  },
+  {
+    "playerId": 10,
+    "name": "Afif Hossain",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/1f3DMwJR/Afif-Hossain.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 900
+  },
+  {
+    "playerId": 11,
+    "name": "Soumya Sarkar",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/ZRPcGY6y/Soumya-Sarkar.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 800
+  },
+  {
+    "playerId": 12,
+    "name": "Nasum Ahmed",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/3mXyf0BY/Nasum-Ahmed.jpg",
+    "role": "Bowler",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Left-Arm Orthodox",
+    "biddingPrice": 700
+  },
+  {
+    "playerId": 13,
+    "name": "Shoriful Islam",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/7JGrbMs1/Shoriful-Islam.jpg",
+    "role": "Bowler",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "Left-Arm Medium",
+    "biddingPrice": 750
+  },
+  {
+    "playerId": 14,
+    "name": "Nurul Hasan Sohan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/35S2CtY7/Nurul-Hasan-Sohan.jpg",
+    "role": "Wicket-Keeper",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "N/A",
+    "biddingPrice": 850
+  },
+  {
+    "playerId": 15,
+    "name": "Mosaddek Hossain",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/W4fCSz0V/Mosaddek-Hossain.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-Hand Bat",
+    "bowlingType": "Right-Arm Offbreak",
+    "biddingPrice": 880
+  }
+]

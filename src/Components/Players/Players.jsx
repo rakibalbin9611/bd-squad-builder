@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import SinglePlayer from "../SinglePlayer/SinglePlayer";
 
 const Players = () => {
+  const [players, setPlayers] = useState([]);
+
+  useEffect(() => {
+    fetch("../../../public/players.json")
+      .then((res) => res.json())
+      .then((data) => setPlayers(data));
+  }, []);
   return (
     <div className="my-20 p-4">
       <div className="md:flex justify-between items-center text-center">
@@ -46,6 +54,16 @@ const Players = () => {
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400/60"></span>
           </button>
         </div>
+      </div>
+      {/* Players..... */}
+      <div>
+        <h2 className="text-3xl font-bold">Players: {players.length}</h2>
+        {players.map((singlePlayer) => (
+          <SinglePlayer
+            key={singlePlayer.id}
+            singlePlayer={singlePlayer}
+          ></SinglePlayer>
+        ))}
       </div>
     </div>
   );
