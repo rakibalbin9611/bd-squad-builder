@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import coin from "../../assets/coins.png";
-const Navbar = () => {
+const Navbar = ({ coins }) => {
   return (
     <div className="navbar bg-base-100 p-8">
       <div className="navbar-start">
@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <img className="w-14 h-14" src={logo} alt="" srcset="" />
+        <img className="w-14 h-14" src={logo} alt="" />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -59,7 +59,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <p className="text-base font-semibold">0 Coin</p>
+        <p className="text-base font-bold">{coins} Coin</p>
         <img className="w-6 h-6 ml-2" src={coin} alt="" />
       </div>
     </div>

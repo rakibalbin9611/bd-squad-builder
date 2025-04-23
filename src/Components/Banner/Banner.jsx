@@ -1,11 +1,11 @@
 import React from "react";
 import bannerPic from "../../assets/banner-main.png";
 
-const Banner = () => {
+const Banner = ({ handleClaimCredit }) => {
   return (
     <div className="text-center bg-gradient-to-r from-[#1f1c2c] via-[#928DAB] to-[#1f1c2c] mx-8 md:py-14 p-5 rounded-2xl shadow-xl border border-white/10">
       <div className="flex items-center justify-center">
-        <img className="w-32 md:w-60" src={bannerPic} alt="" />
+        <img className="w-32 md:w-60" src={bannerPic} />
       </div>
       <div className="mt-4 md:mt-10 space-y-2 md:space-y-8 ">
         <h2 className="text-2xl md:text-5xl font-bold text-white">
@@ -18,6 +18,7 @@ const Banner = () => {
           🎁Claim Free Credit
         </button> */}
         <button
+          onClick={handleClaimCredit}
           className={`
         /* Base styles (mobile-first) */
         relative overflow-hidden group 
