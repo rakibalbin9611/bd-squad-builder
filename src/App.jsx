@@ -5,7 +5,7 @@ import Players from "./Components/Players/Players";
 import SelectedPlayers from "./Components/SelectedPlayers/SelectedPlayers";
 
 const App = () => {
-  const [coins, setCoins] = useState(0);
+  const [coins, setCoins] = useState(2000);
   const [selectPlayers, setSelectedPlayers] = useState([]);
 
   const handleDeletePlayer = (playerId) => {
@@ -23,16 +23,22 @@ const App = () => {
       alert("Player already selected!");
       return;
     }
+    if (singlePlayer.biddingPrice > coins) {
+      alert("You dont have enough coins!");
+      return;
+    }
     if (selectPlayers.length > 5) {
       alert("You can select a maximum of 6 players!");
       return;
     }
 
     setSelectedPlayers([...selectPlayers, singlePlayer]);
+
+    setCoins(coins - singlePlayer.biddingPrice);
   };
 
   const handleClaimCredit = () => {
-    setCoins(coins + 100);
+    setCoins(coins + 500);
   };
   return (
     <div className="container mx-auto">

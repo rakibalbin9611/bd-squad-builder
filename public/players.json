@@ -1,16 +1,6 @@
 [
   {
     "playerId": 1,
-    "name": "Shakib Al Hasan",
-    "country": "Bangladesh",
-    "image": "https://i.ibb.co.com/vxhVYcrx/sakib.jpg",
-    "role": "All-Rounder",
-    "battingType": "Left-Hand Bat",
-    "bowlingType": "Left-Arm Orthodox",
-    "biddingPrice": 1500
-  },
-  {
-    "playerId": 2,
     "name": "Tamim Iqbal",
     "country": "Bangladesh",
     "image": "https://i.ibb.co.com/4Rt0RKBM/tamim.jpg",
@@ -19,6 +9,17 @@
     "bowlingType": "Right-Arm Offbreak",
     "biddingPrice": 1200
   },
+  {
+    "playerId": 2,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/vxhVYcrx/sakib.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-Hand Bat",
+    "bowlingType": "Left-Arm Orthodox",
+    "biddingPrice": 1500
+  },
+
   {
     "playerId": 3,
     "name": "Taskin Ahmed",
