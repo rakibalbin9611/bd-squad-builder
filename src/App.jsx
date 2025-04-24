@@ -2,9 +2,34 @@ import React, { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Banner from "./Components/Banner/Banner";
 import Players from "./Components/Players/Players";
+import SelectedPlayers from "./Components/SelectedPlayers/SelectedPlayers";
 
 const App = () => {
   const [coins, setCoins] = useState(0);
+  const [selectPlayers, setSelectedPlayers] = useState([]);
+
+  const handleDeletePlayer = (playerId) => {
+    const updatedList = selectPlayers.filter(
+      (player) => player.playerId !== playerId
+    );
+    setSelectedPlayers(updatedList);
+  };
+
+  const handleSelectedPlayers = (singlePlayer) => {
+    const alreadySelected = selectPlayers.find(
+      (p) => p.playerId == singlePlayer.playerId
+    );
+    if (alreadySelected) {
+      alert("Player already selected!");
+      return;
+    }
+    if (selectPlayers.length > 5) {
+      alert("You can select a maximum of 6 players!");
+      return;
+    }
+
+    setSelectedPlayers([...selectPlayers, singlePlayer]);
+  };
 
   const handleClaimCredit = () => {
     setCoins(coins + 100);
@@ -14,7 +39,11 @@ const App = () => {
       <Navbar coins={coins}></Navbar>
       <Banner handleClaimCredit={handleClaimCredit}></Banner>
       <main>
-        <Players></Players>
+        <Players handleSelectedPlayers={handleSelectedPlayers}></Players>
+        <SelectedPlayers
+          handleDeletePlayer={handleDeletePlayer}
+          selectPlayers={selectPlayers}
+        ></SelectedPlayers>
       </main>
     </div>
   );

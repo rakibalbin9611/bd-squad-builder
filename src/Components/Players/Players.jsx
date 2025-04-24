@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SinglePlayer from "../SinglePlayer/SinglePlayer";
 
-const Players = () => {
+const Players = ({ handleSelectedPlayers }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -56,10 +56,10 @@ const Players = () => {
         </div>
       </div>
       {/* Players..... */}
-      <div>
-        <h2 className="text-3xl font-bold">Players: {players.length}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {players.map((singlePlayer) => (
           <SinglePlayer
+            handleSelectedPlayers={handleSelectedPlayers}
             key={singlePlayer.id}
             singlePlayer={singlePlayer}
           ></SinglePlayer>
