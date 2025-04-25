@@ -1,4 +1,5 @@
 import React from "react";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const SinglePlayer = ({ singlePlayer, handleSelectedPlayers }) => {
   // console.log(singlePlayer);
@@ -49,6 +50,19 @@ const SinglePlayer = ({ singlePlayer, handleSelectedPlayers }) => {
 "
             >
               Choose Player
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+              ></ToastContainer>
             </button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SinglePlayer from "../SinglePlayer/SinglePlayer";
 
-const Players = ({ handleSelectedPlayers }) => {
+const Players = ({ handleSelectedPlayers, selectPlayers }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -50,7 +50,9 @@ const Players = ({ handleSelectedPlayers }) => {
         text-sm sm:text-base
       "
           >
-            <span className="relative z-10 block">Selected (0)</span>
+            <span className="relative z-10 block">
+              Selected ({selectPlayers.length})
+            </span>
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400/60"></span>
           </button>
         </div>

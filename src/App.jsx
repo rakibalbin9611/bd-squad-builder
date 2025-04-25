@@ -3,9 +3,10 @@ import Navbar from "./Components/Navbar/Navbar";
 import Banner from "./Components/Banner/Banner";
 import Players from "./Components/Players/Players";
 import SelectedPlayers from "./Components/SelectedPlayers/SelectedPlayers";
+import { toast } from "react-toastify";
 
 const App = () => {
-  const [coins, setCoins] = useState(2000);
+  const [coins, setCoins] = useState(5000);
   const [selectPlayers, setSelectedPlayers] = useState([]);
 
   const handleDeletePlayer = (playerId) => {
@@ -20,15 +21,15 @@ const App = () => {
       (p) => p.playerId == singlePlayer.playerId
     );
     if (alreadySelected) {
-      alert("Player already selected!");
+      toast("Already selected");
       return;
     }
     if (singlePlayer.biddingPrice > coins) {
-      alert("You dont have enough coins!");
+      toast("You dont have enough coins!");
       return;
     }
     if (selectPlayers.length > 5) {
-      alert("You can select a maximum of 6 players!");
+      toast("You can select a maximum of 6 players!");
       return;
     }
 
@@ -45,7 +46,10 @@ const App = () => {
       <Navbar coins={coins}></Navbar>
       <Banner handleClaimCredit={handleClaimCredit}></Banner>
       <main>
-        <Players handleSelectedPlayers={handleSelectedPlayers}></Players>
+        <Players
+          selectPlayers={selectPlayers}
+          handleSelectedPlayers={handleSelectedPlayers}
+        ></Players>
         <SelectedPlayers
           handleDeletePlayer={handleDeletePlayer}
           selectPlayers={selectPlayers}
